@@ -25,6 +25,20 @@ body{
     border-radius: 5px;
 }
 
+#timer{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 60px;
+    padding: 20px;
+    background-color: #ffcfcf;
+    border: 5px solid #ff7d7d;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 .displayQuestions{
     display: flex;
     flex-direction: column;
