@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", loadQuestions);
 
 const quizLevel = document.createElement("h2");
 quizLevel.style.textAlign = "right";
+quizLevel.style.fontSize = "1.3rem";
 displayQuestions.prepend(quizLevel);
 
 function displayQuiz(){
