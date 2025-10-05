@@ -7,6 +7,7 @@ const displayQuestions = document.querySelector(".displayQuestions")
 const radios = document.querySelectorAll('input[type="radio"]');
 const question = document.getElementById("question");
 const labels = Array.from(document.querySelector(".options").getElementsByTagName("label"));
+const timer = document.getElementById("timer");
 
 submitBtn.classList.add("disabled");
 nextBtn.classList.add("disabled");
@@ -83,4 +84,9 @@ function checkQuestion(ans){
         if(correctAnswer === ans) score++;
       }
     })
+}
+
+function timeOut(){
+  let timer = 0;
+  
 }
