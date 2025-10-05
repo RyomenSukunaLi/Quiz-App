@@ -1,0 +1,181 @@
+{"questions" : [
+  {
+    "question" : "What does HTML stand for?",
+    "answers" : [
+        { "text" : "Home Tool Markup Language", "correct" : false },
+        { "text" : "Hyperlinks and Text Markup Language", "correct" : false },
+        { "text" : "Hyper Text Markup Language", "correct" : true },
+      { "text" : "High Text Markup Language", "correct" : false }
+    ]},
+  {
+    "question" : "Which language is used for styling web pages?",
+    "answers" : [
+        { "text" : "Python", "correct" : false },
+        { "text" : "CSS", "correct" : true },
+      { "text" : "Java", "correct" : false },
+      { "text" : "HTML", "correct" : false}
+    ]},
+    {
+        "question" : "Which tag is used to create a hyperlink in HTML?",
+        "answers" : [
+            { "text" : "<link>", "correct" : false },
+            { "text" : "<href>", "correct" : false },
+            { "text" : "<url>", "correct" : false },
+            { "text" : "<a>", "correct" : true }
+        ]
+    },
+    {
+        "question" : "Which CSS property controls the text size?",
+        "answers" : [
+            { "text" : "text-style", "correct" : false },
+        { "text" : "font-size", "correct" : true },
+        { "text" : "text-size", "correct" : false },
+        { "text" : "font-style", "correct" : false }
+        ]
+    },
+    {
+        "question" : "Which HTML element is used for the largest heading?",
+        "answers" : [
+            { "text" : "<h6>", "correct" : false },
+            { "text" : "<heading>", "correct" : false },
+            { "text" : "<h1>", "correct" : true },
+        { "text" : "<head>", "correct" : false }
+        ]
+    },
+    {
+        "question" : "How do you write 'Hello World' in an alert box in JavaScript?",
+        "answers" : [
+            { "text" : "msg('Hello World');", "correct" : false },
+            { "text" : "prompt('Hello World');", "correct" : false },
+            { "text" : "console.log('Hello World');", "correct" : false },
+            { "text" : "alert('Hello World');", "correct" : true }
+        ]
+    },
+    {
+        "question" : "Which symbol is used for comments in CSS?",
+        "answers" : [
+            { "text" : "// comment", "correct" : false },
+            { "text" : "<!-- comment -->", "correct" : false },
+            { "text" : "# comment", "correct" : false },
+            { "text" : "/* comment */", "correct" : true }
+        ]
+    },
+    {
+        "question" : "Which HTML attribute specifies an alternate text for an image?",
+        "answers" : [
+            { "text" : "alt", "correct" : true },
+            { "text" : "title", "correct" : false },
+        { "text" : "src", "correct" : false },
+        { "text" : "href", "correct" : false }
+        ]
+    },
+    {
+        "question" : "Which JavaScript method is used to select an element by ID?",
+        "answers" : [
+            { "text" : "document.querySelectorAll()", "correct" : false },
+            { "text" : "document.getElementById()", "correct" : true },
+        { "text" : "document.getElementsByClass()", "correct" : false },
+        { "text" : "document.queryId()", "correct" : false }
+        ]
+    },
+    {
+        "question" : "Which CSS property is used to change text color?",
+        "answers" : [
+            { "text" : "text-color", "correct" : false },
+            { "text" : "font-color", "correct" : false },
+        { "text" : "color", "correct" : true },
+        { "text" : "background-color", "correct" : false }
+        ]
+    },
+    {
+      "question": "Which CSS property is used to change the direction of flex items?",
+      "answers": [
+        { "text": "flex-direction", "correct": true },
+        { "text": "align-items", "correct": false },
+        { "text": "justify-content", "correct": false },
+        { "text": "flex-wrap", "correct": false }
+      ]
+    },
+    {
+      "question": "What will 'typeof []' return in JavaScript?",
+      "answers": [
+        { "text": "array", "correct": false },
+        { "text": "object", "correct": true },
+        { "text": "undefined", "correct": false },
+        { "text": "function", "correct": false }
+      ]
+    },
+    {
+      "question": "Which method adds a new element to the end of an array?",
+      "answers": [
+        { "text": "push()", "correct": true },
+        { "text": "pop()", "correct": false },
+        { "text": "shift()", "correct": false },
+        { "text": "unshift()", "correct": false }
+      ]
+    },
+    {
+      "question": "In the DOM, what does 'document.querySelector()' return?",
+      "answers": [
+        { "text": "A NodeList of all matching elements", "correct": false },
+        { "text": "The first matching element", "correct": true },
+        { "text": "An array of matching elements", "correct": false },
+        { "text": "A string", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following correctly centers an element using Flexbox?",
+      "answers": [
+        { "text": "justify-content: center; align-items: center;", "correct": true },
+        { "text": "align-content: middle;", "correct": false },
+        { "text": "text-align: center;", "correct": false },
+        { "text": "vertical-align: center;", "correct": false }
+      ]
+    },
+    {
+      "question": "Which method converts JSON text into a JavaScript object?",
+      "answers": [
+        { "text": "JSON.stringify()", "correct": false },
+        { "text": "JSON.parse()", "correct": true },
+        { "text": "parse.JSON()", "correct": false },
+        { "text": "Object.fromJSON()", "correct": false }
+      ]
+    },
+    {
+      "question": "What is the default value of 'position' in CSS?",
+      "answers": [
+        { "text": "relative", "correct": false },
+        { "text": "absolute", "correct": false },
+        { "text": "static", "correct": true },
+        { "text": "fixed", "correct": false }
+      ]
+    },
+    {
+      "question": "How do you stop an interval in JavaScript?",
+      "answers": [
+        { "text": "stopInterval()", "correct": false },
+        { "text": "cancelInterval()", "correct": false },
+        { "text": "clearInterval()", "correct": true },
+        { "text": "removeInterval()", "correct": false }
+      ]
+    },
+    {
+      "question": "Which HTML attribute is used to make an input field mandatory?",
+      "answers": [
+        { "text": "required", "correct": true },
+        { "text": "validate", "correct": false },
+        { "text": "mandatory", "correct": false },
+        { "text": "must", "correct": false }
+      ]
+    },
+    {
+      "question": "Which of the following is NOT a JavaScript data type?",
+      "answers": [
+        { "text": "Undefined", "correct": false },
+        { "text": "Number", "correct": false },
+        { "text": "Float", "correct": true },
+        { "text": "Symbol", "correct": false }
+      ]
+    }
+  ]
+}

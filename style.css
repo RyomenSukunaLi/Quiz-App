@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: #ffcfcf;
+
+}
+
+.container{
+    width: 80vw;
+    height: 80vh;
+    margin-top: 10px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ff7d7d;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.displayQuestions{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #fab2b2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#question{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.options input{
+    margin: 20px 0px;
+}
+.options label{
+    font-size: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button{
+    padding: 8px 15px;
+    background-color: #ff4747;
+    border: none;
+    border-radius: 5px;
+    color: #fab2b2;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+.buttons button:hover{
+    color : white;
+}
+
+.buttons button.disabled{
+    background-color: #cccccc;
+    color: #666666;
+    opacity: 0.7; 
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+#resultBtn {
+    background-color: rgb(255, 0, 0);
+    transition: all 0.3s ease;
+}
+
+#resultBtn:hover{
+    background-color: rgb(255, 79, 79);
+}
+
+.result, #totalScore{
+    font-size: 25px;
+    margin-top: 20px;
+    text-align: center;
+}
