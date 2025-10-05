@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     background-color: #ffcfcf;
 
 }
@@ -21,21 +21,21 @@ body{
     flex-direction: column;
     justify-content: space-between;
     background-color: #ff7d7d;
-    padding: 20px;
+    padding: 0.8rem;
     border-radius: 5px;
 }
 
 .displayQuestions{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     background-color: #fab2b2;
-    padding: 10px;
+    padding: 0.7rem;
     border-radius: 5px;
 }
 
 #question{
-    font-size: 30px;
+    font-size: 1.5rem;
     font-weight: bolder;
 }
 
@@ -43,7 +43,7 @@ body{
     margin: 20px 0px;
 }
 .options label{
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 .buttons{
@@ -58,7 +58,7 @@ body{
     color: #fab2b2;
     font-weight: bold;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 1rem;
     transition: all 0.3s ease;
 }
 .buttons button:hover{
@@ -83,7 +83,7 @@ body{
 }
 
 .result, #totalScore{
-    font-size: 25px;
+    font-size: 1rem;
     margin-top: 20px;
     text-align: center;
 }
