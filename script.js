@@ -71,13 +71,14 @@ nextBtn.addEventListener("click", event => {
     index++;
     displayQuiz();
     nextBtn.classList.add("disabled");
-    startTimer(true);
+    startTimer();
   }
   else{
     nextBtn.style.display = "none";
     submitBtn.style.display = "none";
     displayQuestions.style.display = "none";
-    resultBtn.style.display = "Block";
+    timerContent.style.display = "none";
+    resultBtn.style.display = "block";
   }
 })
 
@@ -95,9 +96,10 @@ function checkQuestion(ans){
     })
 }
 
-function startTimer(instant = false){
+function startTimer(){
+  clearInterval(timeOutID);
   let timer = 30;
-  if(instant) timerContent.textContent = String(timer).padStart(2, "0");
+  timerContent.textContent = String(timer).padStart(2, "0");
   timeOutID = setInterval(() => {
     timer--;
     timerContent.textContent = String(timer).padStart(2, "0");
