@@ -7,7 +7,9 @@ const displayQuestions = document.querySelector(".displayQuestions")
 const radios = document.querySelectorAll('input[type="radio"]');
 const question = document.getElementById("question");
 const labels = Array.from(document.querySelector(".options").getElementsByTagName("label"));
-const timer = document.getElementById("timer");
+const timerContent = document.getElementById("timerContent");
+
+let timeOutID = null;
 
 submitBtn.classList.add("disabled");
 nextBtn.classList.add("disabled");
@@ -24,7 +26,10 @@ async function loadQuestions(){
   displayQuiz();
 }
 
-document.addEventListener("DOMContentLoaded", loadQuestions);
+document.addEventListener("DOMContentLoaded", () => {
+  loadQuestions();
+  startTimer()
+});
 
 const quizLevel = document.createElement("h2");
 quizLevel.style.textAlign = "right";
@@ -57,12 +62,16 @@ submitBtn.addEventListener("click", event => {
         })
 
 nextBtn.addEventListener("click", event => {
+  clearInterval(timeOutID);
+
   checkQuestion(ans);
   radios.forEach(radio => radio.checked = false);
+  
   if(index < questions.length - 1){
     index++;
     displayQuiz();
     nextBtn.classList.add("disabled");
+    startTimer(true);
   }
   else{
     nextBtn.style.display = "none";
@@ -86,7 +95,15 @@ function checkQuestion(ans){
     })
 }
 
-function timeOut(){
-  let timer = 0;
-  
+function startTimer(instant = false){
+  let timer = 30;
+  if(instant) timerContent.textContent = String(timer).padStart(2, "0");
+  timeOutID = setInterval(() => {
+    timer--;
+    timerContent.textContent = String(timer).padStart(2, "0");
+    if(timer < 0){
+      clearInterval(timeOutID);
+      nextBtn.click();
+    }
+  },1000)
 }
